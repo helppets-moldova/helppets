@@ -5,12 +5,12 @@
                 <div class="volunteer_header">
                     <h3>{{ volunteerInfo.title }}</h3>
                     <img
-                        :src="`/help_shelters_project/icons8-cross-50.png`" alt="Логотип"
+                        :src="`/icons8-cross-50.png`" alt="Логотип"
                         @click="$emit('close')"
                     />
                 </div>
                 <div class="volunteer_content">
-                    <img :src="`/help_shelters_project/images/${volunteerInfo.images[0]}`" alt="Image"
+                    <img :src="`/images/${volunteerInfo.images[0]}`" alt="Image"
                          class="volunteer_photo"/>
                     <div class="volunteer_info" v-html="volunteerInfo.contacts"/>
                     <div class="volunteer_info" v-html="volunteerInfo.location"/>

@@ -5,13 +5,14 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/help_shelters_project/',
+  base: '/helppets/',
   plugins: [
     vue(),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '~': fileURLToPath(new URL('/helppets', import.meta.url)),
     }
   },
   css: {
@@ -22,9 +23,5 @@ export default defineConfig({
                         @import "@/styles/common.scss";`,
       },
     },
-  },
-  build: {
-    // outDir: 'dist', // Указывает на папку для собранных файлов
-    // homepage: "https://github.com/shelters_page_deploy/"
   },
 })

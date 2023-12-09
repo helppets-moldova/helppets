@@ -25,22 +25,26 @@ export const useMainPageStore = defineStore('mainPage', {
                                     name: 'animalute pe degeaba',
                                     link: 'https://www.facebook.com/groups/809873382465795/',
                                 },
-                                {
-                                    name: 'Кишиневский клуб любителей животных/Clubul Iubitorilor De Animale Chisinau',
-                                    link: 'https://www.facebook.com/groups/catanddogmd/',
-                                },
-                                {
-                                    name: 'Protectia animalelor Chisinau',
-                                    link: 'https://www.facebook.com/groups/protectia.animalelor.chisinau/',
-                                },
+                                // {
+                                //     name: 'Кишиневский клуб любителей животных/Clubul Iubitorilor De Animale Chisinau',
+                                //     link: 'https://www.facebook.com/groups/catanddogmd/',
+                                // },
+                                // {
+                                //     name: 'Protectia animalelor Chisinau',
+                                //     link: 'https://www.facebook.com/groups/protectia.animalelor.chisinau/',
+                                // },
                                 {
                                     name: 'Adopta - Moldova (Мы ищем дом)',
                                     link: 'https://www.facebook.com/groups/AdoptaMoldova/'
                                 },
                                 {
-                                    name: 'Волонтерская группа\'\'Забота о бездомных животных Молдова.\'\'Помощь.Ищем дом.',
-                                    link: 'https://www.facebook.com/groups/237652107095330/'
+                                    name: 'Помощь бездомным животным. Молдова.',
+                                    link: 'https://www.facebook.com/groups/902864583155001'
                                 }
+                                // {
+                                //     name: 'Волонтерская группа\'\'Забота о бездомных животных Молдова.\'\'Помощь.Ищем дом.',
+                                //     link: 'https://www.facebook.com/groups/237652107095330/'
+                                // }
                             ],
                             instagram: []
                         }
