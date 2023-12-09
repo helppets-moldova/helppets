@@ -9,5 +9,11 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    <script type="text/javascript">
+        if (window.location.pathname.startsWith('/helppets/')) {
+            window.history.replaceState(null, null, window.location.pathname.substr('/helppets/'.length) + window.location.search);
+        }
+    </script>
+
   </body>
 </html>

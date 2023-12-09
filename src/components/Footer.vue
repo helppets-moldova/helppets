@@ -1,7 +1,7 @@
 <template>
     <MainView v-if="content" class="footer">
         <p class="footer_text">{{ content.footer.line_one }}</p>
-        <p class="footer_text">{{ content.footer.line_two }}</p>
+        <p class="footer_text" v-html="content.footer.line_two"/>
     </MainView>
 </template>
 
