@@ -19,7 +19,7 @@
                             <template v-for="link in vetInfo.socialLinks">
                                 <div v-if="link.link" class="vets_wrapper_main-info_left_social_link">
                                     <router-link :to="link.link">
-                                        <img :src="`/icons/${link.icon}`" alt="icon"/>
+                                        <img :src="`${$baseURL}/icons/${link.icon}`" alt="icon"/>
                                     </router-link>
                                 </div>
                             </template>
@@ -63,7 +63,7 @@
                     :navigation="true"
                 >
                     <swiper-slide v-for="(imageName, index) in vetInfo.photos" :key="index">
-                        <img class="vets_wrapper_gallery_swiper_image" :src="`/vets/${imageName}`"
+                        <img class="vets_wrapper_gallery_swiper_image" :src="`${$baseURL}/vets/${imageName}`"
                              alt="Image"/>
                     </swiper-slide>
                 </swiper>
@@ -75,7 +75,7 @@
                         <h3>{{ doctor.name }}</h3>
                         <p>{{ doctor.info }}</p>
                     </div>
-                    <img class="vets_wrapper_doctors_doctor_photo" :src="`/vets/${doctor.photo}`"
+                    <img class="vets_wrapper_doctors_doctor_photo" :src="`${$baseURL}/vets/${doctor.photo}`"
                          alt="doctor-photo"/>
                 </div>
             </div>

@@ -8,7 +8,7 @@
                     <template v-for="link in shelterInfo.social">
                         <div v-if="link.link" class="shelters_shelter_header_social">
                             <router-link :to="link.link">
-                                <img :src="`/icons/${ link.icon }`"/>
+                                <img :src="`${$baseURL}/icons/${ link.icon }`"/>
                             </router-link>
                         </div>
                     </template>
@@ -42,7 +42,7 @@
                     class="shelters_shelter_gallery_swiper"
                 >
                     <swiper-slide v-for="(imageName, index) in images" :key="index">
-                        <img :src="`/images/${imageName}`" alt="Image" class="shelters_shelter_gallery_image"/>
+                        <img :src="`${$baseURL}/images/${imageName}`" alt="Image" class="shelters_shelter_gallery_image"/>
                     </swiper-slide>
                 </swiper>
             </div>

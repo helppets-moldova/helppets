@@ -15,6 +15,8 @@ SwiperCore.use([Autoplay, Pagination, Navigation])
 
 const app = createApp(App)
 
+app.config.globalProperties.$baseURL = import.meta.env.VITE_BASE_URL
+
 app.component('Swiper', Swiper)
 app.component('SwiperSlide', SwiperSlide)
 

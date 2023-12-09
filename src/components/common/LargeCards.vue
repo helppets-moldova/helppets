@@ -4,7 +4,7 @@
         <div class="cards">
             <div v-for="card in content.shelters" class="card">
                 <div v-if="!showLarge" class="card_image">
-                    <img :src="`/shelters/${card.img}`"/>
+                    <img :src="`${$baseURL}/shelters/${card.img}`"/>
                 </div>
                 <div v-if="!showLarge" class="card_content">
                     <div class="card_content_title">{{ card.title }}</div>
@@ -13,7 +13,7 @@
                     </p>
                 </div>
                 <div v-if="showLarge" class="card_image">
-                    <img :src="`/shelters/${card.img}`"/>
+                    <img :src="`${$baseURL}/shelters/${card.img}`"/>
                 </div>
                 <div v-if="showLarge" class="card_content">
                     <div class="card_content_title">{{ content.info.title }}</div>
@@ -27,7 +27,7 @@
                         <template v-for="link in card.social">
                             <div v-if="link.link" class="card_social">
                                 <router-link :to="link.link">
-                                    <img :src="`/icons/${ link.icon }`"/>
+                                    <img :src="`${$baseURL}/icons/${ link.icon }`"/>
                                 </router-link>
                             </div>
                         </template>
